@@ -17,9 +17,8 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
-    <!-- Ajout du script de redirection pour GitHub Pages SPA -->
+    <!-- Script de redirection pour GitHub Pages SPA -->
     <script type="text/javascript">
-      // Script utilisé uniquement sur GitHub Pages
       (function(l) {
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
@@ -29,12 +28,38 @@
               l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      }(window.location));
+      
+      // Console log pour débogage
+      console.log("Chargement de l'application:", {
+        location: window.location.href,
+        hostname: window.location.hostname,
+        pathname: window.location.pathname
+      });
+    </script>
+
+    <!-- Ajout d'une solution de secours pour les erreurs -->
+    <script type="text/javascript">
+      window.addEventListener('error', function(e) {
+        console.error('Erreur détectée:', e.message);
+        // Afficher une erreur visible à l'utilisateur en cas de problème
+        if (document.getElementById('root').children.length === 0) {
+          document.getElementById('root').innerHTML = '<div style="padding: 20px; text-align: center;"><h2>Une erreur est survenue</h2><p>Veuillez réessayer ou contacter le support.</p></div>';
+        }
+      });
     </script>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Contenu de secours si le JS ne charge pas -->
+      <noscript>
+        <div style="padding: 20px; text-align: center;">
+          <h2>JavaScript est désactivé</h2>
+          <p>Veuillez activer JavaScript pour utiliser cette application.</p>
+        </div>
+      </noscript>
+    </div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
