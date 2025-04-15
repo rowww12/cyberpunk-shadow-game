@@ -1,7 +1,5 @@
-
 const Footer = () => {
-  return (
-    <footer className="bg-black py-10 border-t border-cyberpunk-purple/20">
+  return <footer className="bg-black py-10 border-t border-cyberpunk-purple/20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
@@ -18,19 +16,11 @@ const Footer = () => {
           </div>
           
           <div className="text-center md:text-right">
-            <p className="text-gray-300 text-sm">
-              <span className="text-cyberpunk-red font-bold">ATTENTION:</span> Ce site est une démonstration éducative
-              <br />
-              de techniques de phishing. Ne saisissez jamais vos véritables informations.
-            </p>
-            <p className="text-gray-500 text-xs mt-2">
-              © 2025 Projet éducatif cybersécurité - Tous droits réservés
-            </p>
+            
+            <p className="text-gray-500 mt-2 font-extralight text-xs text-right py-px mx-0 px-0 my-[23px]">© 2025 Tous droits réservés</p>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
