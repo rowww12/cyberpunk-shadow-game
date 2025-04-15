@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="text-2xl font-bold">
               <span className="text-cyberpunk-purple">Cyber</span>
               <span className="text-cyberpunk-neon">Crack</span>
-              <span className="text-cyberpunk-pink">77</span>
+              
             </div>
             <p className="text-gray-400 mt-2 text-sm">
               Site éducatif créé à des fins de sensibilisation.
