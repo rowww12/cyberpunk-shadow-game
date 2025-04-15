@@ -5,6 +5,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Index from "./pages/Index";
+import Cracks from "./pages/Cracks";
+import Tutorials from "./pages/Tutorials";
 import NotFound from "./pages/NotFound";
 import { useEffect, useState } from "react";
 
@@ -45,6 +47,8 @@ const App = () => {
           <HashRouter>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/cracks" element={<Cracks />} />
+              <Route path="/tutorials" element={<Tutorials />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </HashRouter>
@@ -52,6 +56,8 @@ const App = () => {
           <BrowserRouter basename={basename}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/cracks" element={<Cracks />} />
+              <Route path="/tutorials" element={<Tutorials />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

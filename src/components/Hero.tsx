@@ -35,18 +35,12 @@ const Hero = () => {
         <p className="text-cyberpunk-neon text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
           Téléchargez le <span className="text-cyberpunk-pink">crack complet</span> avec tous les DLC et profitez de Night City sans limites!
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <Button 
             className="bg-gradient-to-r from-cyberpunk-purple to-cyberpunk-pink hover:from-cyberpunk-pink hover:to-cyberpunk-purple text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg shadow-cyberpunk-purple/20"
             onMouseOver={handleMouseOver}
           >
             ACCÉDER AU CRACK
-          </Button>
-          <Button 
-            variant="outline" 
-            className="border-cyberpunk-blue text-cyberpunk-blue hover:bg-cyberpunk-blue/10"
-          >
-            VOIR LES TUTORIELS
           </Button>
         </div>
       </div>
