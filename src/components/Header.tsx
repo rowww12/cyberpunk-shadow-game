@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import { Image } from "lucide-react";
 
 const Header = () => {
   const [glitchActive, setGlitchActive] = useState(false);
@@ -16,7 +17,8 @@ const Header = () => {
   return (
     <header className="w-full bg-cyberpunk-darkpurple border-b border-cyberpunk-purple/30 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className={`text-cyberpunk-neon text-3xl font-bold ${glitchActive ? 'animate-pulse' : ''}`}>
+        <div className={`text-cyberpunk-neon text-3xl font-bold ${glitchActive ? 'animate-pulse' : ''} flex items-center`}>
+          <Image className="h-8 w-8 mr-2 text-cyberpunk-neon" />
           <span className="text-cyberpunk-purple">Cyber</span>
           <span className="text-cyberpunk-neon">Crack</span>
           <span className="text-cyberpunk-pink">77</span>

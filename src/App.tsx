@@ -28,8 +28,8 @@ const App = () => {
     setIsLoaded(true);
   }, []);
 
-  // Utiliser HashRouter pour GitHub Pages, sinon BrowserRouter
-  const basename = isGitHubPages() ? '/cyberpunk-shadow-game' : '/';
+  // Utiliser le nouveau nom de base pour GitHub Pages
+  const basename = isGitHubPages() ? '/crackyourgames' : '/';
   
   if (!isLoaded) {
     return <div className="flex items-center justify-center h-screen bg-black text-white">Chargement...</div>;
