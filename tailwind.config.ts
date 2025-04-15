@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+                cyberpunk: {
+                    purple: "#9b87f5",
+                    darkpurple: "#1A1F2C",
+                    brightpurple: "#8B5CF6",
+                    pink: "#D946EF",
+                    orange: "#F97316",
+                    blue: "#0EA5E9",
+                    neon: "#33C3F0",
+                    darkgray: "#222222",
+                    red: "#ea384c"
+                },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
