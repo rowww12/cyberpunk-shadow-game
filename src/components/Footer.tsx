@@ -4,8 +4,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="text-2xl font-bold">
-              <span className="text-cyberpunk-purple">Cyber</span>
-              <span className="text-cyberpunk-neon">Crack</span>
+              <span className="text-cyberpunk-purple">CrackYour</span>
+              <span className="text-cyberpunk-neon">Games</span>
               
             </div>
             <p className="text-gray-400 mt-2 text-sm">
