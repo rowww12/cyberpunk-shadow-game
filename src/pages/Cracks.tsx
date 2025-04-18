@@ -143,7 +143,7 @@ const Cracks = () => {
             <div className="mt-12 flex justify-center">
               <Button 
                 className="bg-gradient-to-r from-cyberpunk-purple to-cyberpunk-pink hover:from-cyberpunk-pink hover:to-cyberpunk-purple text-white font-bold py-3 px-8 rounded-md"
-                onClick={() => window.location.href = "#download"}
+                onClick={() => window.location.href = "/all-cracks"}
               >
                 VOIR TOUS LES CRACKS
               </Button>

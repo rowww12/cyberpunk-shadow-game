@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Index from "./pages/Index";
 import Cracks from "./pages/Cracks";
+import AllCracks from "./pages/AllCracks";
 import Tutorials from "./pages/Tutorials";
 import TutorialLauncher from "./pages/TutorialLauncher";
 import TutorialAntivirus from "./pages/TutorialAntivirus";
@@ -44,6 +45,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/cracks" element={<Cracks />} />
+      <Route path="/all-cracks" element={<AllCracks />} />
       <Route path="/tutorials" element={<Tutorials />} />
       <Route path="/tutorial-launcher" element={<TutorialLauncher />} />
       <Route path="/tutorial-antivirus" element={<TutorialAntivirus />} />
