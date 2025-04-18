@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Index from "./pages/Index";
 import Cracks from "./pages/Cracks";
 import Tutorials from "./pages/Tutorials";
+import TutorialLauncher from "./pages/TutorialLauncher";
+import TutorialAntivirus from "./pages/TutorialAntivirus";
+import TutorialTroubleshooting from "./pages/TutorialTroubleshooting";
 import NotFound from "./pages/NotFound";
 import { useEffect, useState } from "react";
 
@@ -37,6 +40,18 @@ const App = () => {
     return <div className="flex items-center justify-center h-screen bg-black text-white">Chargement...</div>;
   }
 
+  const routes = (
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/cracks" element={<Cracks />} />
+      <Route path="/tutorials" element={<Tutorials />} />
+      <Route path="/tutorial-launcher" element={<TutorialLauncher />} />
+      <Route path="/tutorial-antivirus" element={<TutorialAntivirus />} />
+      <Route path="/tutorial-troubleshooting" element={<TutorialTroubleshooting />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+
   // Utiliser HashRouter pour GitHub Pages pour éviter les problèmes de routes
   return (
     <QueryClientProvider client={queryClient}>
@@ -44,23 +59,9 @@ const App = () => {
         <Toaster />
         <Sonner />
         {isGitHubPages() ? (
-          <HashRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/cracks" element={<Cracks />} />
-              <Route path="/tutorials" element={<Tutorials />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </HashRouter>
+          <HashRouter>{routes}</HashRouter>
         ) : (
-          <BrowserRouter basename={basename}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/cracks" element={<Cracks />} />
-              <Route path="/tutorials" element={<Tutorials />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
+          <BrowserRouter basename={basename}>{routes}</BrowserRouter>
         )}
       </TooltipProvider>
     </QueryClientProvider>

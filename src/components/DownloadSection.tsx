@@ -36,7 +36,7 @@ const DownloadSection = () => {
           <Card className="bg-black/80 border border-cyberpunk-purple/50 shadow-lg shadow-cyberpunk-purple/20">
             <CardHeader>
               <CardTitle className="text-cyberpunk-neon">
-                {isLoading ? "Téléchargement en cours" : "Prêt au téléchargement"}
+                {isLoading ? "Téléchargement en cours" : "Télécharger notre Launcher"}
               </CardTitle>
               <CardDescription>
                 {isLoading ? "Veuillez patienter pendant le téléchargement" : "Cliquez pour commencer le téléchargement"}
@@ -61,7 +61,7 @@ const DownloadSection = () => {
               <Button 
                 onClick={handleDownload}
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-cyberpunk-purple to-cyberpunk-pink hover:brightness-110"
+                className="w-full bg-gradient-to-r from-cyberpunk-purple to-cyberpunk-purple hover:brightness-110"
               >
                 {isLoading ? "Téléchargement en cours..." : "Télécharger maintenant"}
               </Button>
