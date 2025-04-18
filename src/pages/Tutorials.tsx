@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -28,7 +27,7 @@ const Tutorials = () => {
                   <div className="flex items-center mb-4 md:mb-0">
                     <BookOpen className="text-cyberpunk-neon mr-3 h-8 w-8" />
                     <div>
-                      <h3 className="text-xl font-bold">Comment utiliser notre crack de Cyberpunk 2077</h3>
+                      <h3 className="text-xl font-bold">Comment utiliser CrackYourGames</h3>
                       <p className="text-gray-400 text-sm">Installation pas à pas avec contournement des vérifications DRM</p>
                     </div>
                   </div>

@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DownloadSection from "@/components/DownloadSection";
@@ -20,7 +19,7 @@ const Cracks = () => {
             </h1>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-              {/* Cyberpunk 2077 */}
+              {/* CrackYourGames */}
               <div className="bg-gradient-to-br from-cyberpunk-darkpurple to-black border border-cyberpunk-purple/30 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-cyberpunk-purple/20 transition-all duration-300">
                 <div className="h-48 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5')] bg-cover bg-center relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
@@ -29,7 +28,7 @@ const Cracks = () => {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="text-xl font-bold mb-2">Cyberpunk 2077</h3>
+                  <h3 className="text-xl font-bold mb-2">CrackYourGames</h3>
                   <p className="text-gray-400 text-sm mb-4">Crack complet + DLC Phantom Liberty</p>
                   <div className="flex justify-between items-center">
                     <span className="text-cyberpunk-neon text-sm">Mise à jour: 15/04/2025</span>
